@@ -1,0 +1,82 @@
+.app__name {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* LOGO */
+.logo {
+  block-size: 3.25rem;
+  inline-size: 3.25rem;
+  border-radius: 50%;
+}
+
+.app_name-text {
+  font-size: 5rem;
+  text-align: center;
+  color: var(--text-color);
+  padding: 1rem 2rem;
+
+  margin: auto;
+  height: 7rem;
+}
+
+.app_name-text > span {
+  animation: stretch 1s infinite;
+  animation-timing-function: linear;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.app_name-text .letter1 {
+  animation-delay: -0.9s;
+}
+
+.app_name-text .letter2 {
+  animation-delay: -0.8s;
+}
+
+.app_name-text .letter3 {
+  animation-delay: -0.7s;
+}
+
+.app_name-text .letter4 {
+  animation-delay: -0.6s;
+}
+
+.app_name-text .letter5 {
+  animation-delay: -0.5s;
+}
+
+.app_name-text .letter6 {
+  animation-delay: -0.4s;
+}
+
+@keyframes stretch {
+  0%,
+  100% {
+    top: 0;
+  }
+
+  50% {
+    top: -1rem;
+    color: tan;
+  }
+}
+
+.app-playlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 1020px) {
+  .app-playlist {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.footer-container {
+  margin-top: 3rem;
+}
